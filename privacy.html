@@ -18,32 +18,39 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="lead">AnimeeDonghua Studio · last updated 25 October 2026</p>
+  <p class="lead"><a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+  <p>Last updated 25 October 2026.</p>
 
-  <p>AnimeeDonghua Studio ("the app") is a desktop app for Windows. It is used only by the owner of the YouTube channel <a href="https://www.youtube.com/@animeedonghua">@animeedonghua</a> to manage that channel. This page explains what the app does with Google user data.</p>
+  <p>AnimeeDonghua Studio ("the app") is a desktop app for Windows. It is used only by the owner of the YouTube channel <a href="https://www.youtube.com/@animeedonghua">@animeedonghua</a> to manage that channel. <b>The app uses YouTube API Services</b> (the YouTube Data API and the YouTube Analytics API). By using the app you also agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of data is described in the <a href="https://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
 
   <h2>What the app accesses</h2>
-  <p>When the owner signs in with Google, the app asks for two permissions:</p>
+  <p>When the owner connects a YouTube channel with Google sign-in, the app asks for two permissions:</p>
   <ul>
-    <li><b>YouTube</b> (<code>youtube</code>): to upload the owner's videos, edit their titles, descriptions, tags and publish times, and delete videos that fail YouTube's checks;</li>
+    <li><b>YouTube</b> (<code>youtube</code>): to upload the owner's videos, set their title, description, tags, privacy status and publish time, and delete videos that fail YouTube's checks;</li>
     <li><b>YouTube Analytics, read-only</b> (<code>yt-analytics.readonly</code>): to read views, watch time and traffic sources of the owner's videos.</li>
   </ul>
-  <p>The app does not read the owner's email, contacts, or any other Google data.</p>
+  <p>The app does not access the owner's email, contacts, or any other Google data, and it never accesses other people's channels.</p>
 
-  <h2>Where the data is kept</h2>
-  <p>Everything stays on the owner's computer. The Google sign-in token is stored encrypted with Windows Data Protection (DPAPI). Video statistics are stored in local files used to plan future Shorts. The app has no server and does not upload this data anywhere.</p>
+  <h2>What the app stores and how it uses it</h2>
+  <ul>
+    <li>The Google sign-in token, encrypted with Windows Data Protection (DPAPI), so the app can keep working without signing in each time.</li>
+    <li>The channel's video list and statistics (titles, publish times, views, likes, watch time, traffic sources), used only to show the owner how their Shorts perform and to plan the next ones.</li>
+  </ul>
+  <p>All of this is kept in files on the owner's computer. The app has no server and does not upload this data anywhere. While connected, the app reads the channel again at least every 30 days and removes data of videos that are no longer on the channel.</p>
 
   <h2>Sharing</h2>
-  <p>The app does not sell, rent or share Google user data with anyone. The only place it sends information is the owner's own Telegram bot, which sends the owner notifications such as a video's title, publish time and view count. No Google user data is used for advertising or to train AI models.</p>
+  <p>The app does not sell, rent or share YouTube or Google user data with anyone. The only place it sends information is the owner's own Telegram bot, which sends the owner notifications such as a video's title, publish time and view count. No one else receives the data. It is not used for advertising or to train AI models.</p>
+  <p>The app shows no ads and lets no third party serve content. Neither the app nor this website uses cookies; the app stores its data only in the files described above.</p>
   <p>The app's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
-  <h2>Removing access</h2>
-  <p>The owner can disconnect YouTube in the app at any time, which deletes the stored token. Access can also be removed at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <h2>Deleting data and removing access</h2>
+  <ul>
+    <li><b>In the app:</b> Connections (Ulanishlar) → YouTube → <b>Disconnect (Uzish)</b>. The app revokes its Google token right away and deletes the YouTube data it stored.</li>
+    <li><b>On Google's page:</b> access can be revoked at any time on the Google security settings page, <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>. If the app's access stops working and is not restored, the app deletes the YouTube data it stored within 30 days.</li>
+  </ul>
 
   <h2>Contact</h2>
-  <p>Questions about this policy: <a href="https://github.com/shaxboz1011/animeedonghua-studio/issues">open an issue on GitHub</a>.</p>
-
-  <p><a href="index.html">← AnimeeDonghua Studio</a></p>
+  <p>Questions or complaints about this policy: <a href="https://github.com/shaxboz1011/animeedonghua-studio/issues">open an issue on GitHub</a>.</p>
 </main>
 </body>
 </html>
